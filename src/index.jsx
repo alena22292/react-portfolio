@@ -1,18 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { reducer as formReducer } from 'redux-form';
-
+import App from './containers/app';
 import '../assets/stylesheets/application.scss';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 // render an instance of the component in the DOM
 ReactDOM.render(
-    <Router history={history}>
-      <div className="view-container">
-        <Switch>
-          <Route path="/" exact component={} />
-        </Switch>
-      </div>
-    </Router>
+  <App />,
   document.getElementById('root')
 );
