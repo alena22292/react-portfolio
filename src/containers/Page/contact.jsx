@@ -32,7 +32,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <section className="page-section" id="contact">
+      <section className="page-section masthead" id="contact" style={{ backgroundImage: 'url("../../../assets/images/contact.jpg")' }}>
         <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
