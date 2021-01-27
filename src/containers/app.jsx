@@ -5,6 +5,7 @@ import Home from './Page/home';
 import About from './Page/about';
 import Service from './Page/service';
 import Portfolio from './Page/portfolio';
+import Contact from './Page/contact';
 
 class App extends Component {
   render() {
@@ -27,6 +28,10 @@ class App extends Component {
           <Route
             path="/portfolio"
             component={Portfolio}
+          />
+          <Route
+            path="/contact"
+            component={Contact}
           />
         </Wrapper>
       </Router>
