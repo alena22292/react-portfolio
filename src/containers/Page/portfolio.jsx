@@ -13,7 +13,7 @@ const portfolio = [
 class Portfolio extends Component {
   render() {
     return (
-      <section className="bg-light page-section" id="portfolio">
+      <section className="bg-light page-section page-top" id="portfolio">
         <div className="container">
         <div className="row">
             <div className="col-lg-12 text-center">

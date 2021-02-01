@@ -11,7 +11,7 @@ class Service extends Component {
   render() {
     return (
       <div>
-        <section className="page-section" id="services">
+        <section className="page-section page-top" id="services">
             <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
