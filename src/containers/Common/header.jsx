@@ -7,8 +7,8 @@ class Header extends Component {
       <header className="masthead page-top" style={{ backgroundImage: 'url("' + this.props.image + '")' }}>
 
         <div className="hero-text">
-            <h1 className="">{this.props.title}</h1>
-            <h3 className="text-uppercase">{this.props.subtitle}</h3>
+            <h1 style={{ color: '#bbf1fa' }} className="">{this.props.title}</h1>
+            <h3 style={{ color: '#bbf1fa' }} className="text-uppercase">{this.props.subtitle}</h3>
             {this.props.showButton &&
                 <Link className="btn btn-primary btn-xl text-uppercase " to={this.props.link}>{this.props.buttonText}</Link>
             }

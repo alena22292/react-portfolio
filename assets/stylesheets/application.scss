@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap');
 // Variables:
 $mainColor: #eaeaea !important;
 $secondaryColor: #fff !important;
@@ -6,15 +7,15 @@ $mainText: black;
 $secondaryText: #4b5156;
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #f4f4f4 !important;
-  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: $mainColor;
   padding: 0;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
   color: $mainText;
+  font-family: 'Sriracha', cursive;
 }
 
 p, li, span, label, input, textarea {
@@ -40,8 +41,17 @@ h6 {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
 
 
+ul {
+  list-style: none;
+}
 // Home page***************
 .page-top {
   margin-top: 56px;
@@ -77,6 +87,71 @@ h6 {
 }
 
 .main-container {
-  width: 1200px;
   margin: 0 auto;
+}
+
+.greeting-wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  // border: 2px dashed #276678;
+  min-height: 10em;
+}
+.intro-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 20em;
+  grid-template-areas:
+    'nav-wrapper nav-wrapper'
+    'left-wrapper right-wrapper'
+    ;
+  background: $secondaryColor;
+  border-radius: 10px 10px 0 0 ;
+  border: 1px solid $borderColor;
+}
+
+.nav-wrapper {
+  grid-area: nav-wrapper;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0 ;
+  border-bottom: 1px solid $borderColor;
+  background: $mainColor;
+}
+.dots-wrapper{
+   display: flex;
+   padding-left: 5px;
+}
+.nav-dots {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+#dot-1 {
+  background-color: #ec4646;
+}
+#dot-2 {
+  background-color: #ffcc29;
+}
+#dot-3 {
+  background-color: #16c79a;
+}
+#navigation {
+  margin: 0;
+  padding-top: 10px;
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.left-wrapper {
+  grid-area: left-wrapper;
+}
+.right-wrapper {
+  grid-area: right-wrapper;
 }
