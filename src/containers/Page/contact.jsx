@@ -35,7 +35,7 @@ class Contact extends Component {
       <section className="page-section masthead" id="contact" style={{ backgroundImage: 'url("../../../assets/images/contact.jpg")' }}>
         <div className="container">
         <div className="row">
-          <div className="col-lg-12 text-center">
+          <div className="col-lg-12 text-center" style={{paddingTop: '80px'}}>
             <h2 className="section-heading text-uppercase">Contact Us</h2>
             <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur</h3>
           </div>

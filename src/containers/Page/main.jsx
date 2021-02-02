@@ -42,24 +42,18 @@ class Main extends Component {
                 <p className="light-text">*Theme settings will be saved for<br />your next visit</p>
               </div>
               <div className="right-wrapper">
-                 right-column
+                <div id="preview-shadow">
+                  <div id="preview">
+                    <div id="corner-tl" className="corner"></div>
+                    <div id="corner-tr" className="corner"></div>
+                    <h3>About me...</h3>
+                    <p>Curious about coding and cutting age technlogies. Good teamworker and responsible person.</p>
+                    <div id="corner-bl" className="corner"></div>
+                    <div id="corner-br" className="corner"></div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section className="s2">
-          <div className="main-container">
-            <h1>About</h1>
-          </div>
-        </section>
-        <section className="s1">
-          <div className="main-container">
-            <h1>Contact</h1>
-          </div>
-        </section>
-        <section className="s2">
-          <div className="main-container">
-            <h1>Portfolio</h1>
           </div>
         </section>
       </div>
