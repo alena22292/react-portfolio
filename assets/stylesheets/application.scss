@@ -1,11 +1,9 @@
 // Variables:
-$mainColor: #eaeaea;
-$secondaryColor: #fff;
-
+$mainColor: #eaeaea !important;
+$secondaryColor: #fff !important;
+$borderColor: #c1c1c1 !important;
 $mainText: black;
-
-
-
+$secondaryText: #4b5156;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -20,8 +18,29 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 p, li, span, label, input, textarea {
-
+  color: $secondaryText;
 }
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+
 
 // Home page***************
 .page-top {
@@ -44,3 +63,20 @@ p, li, span, label, input, textarea {
 }
 
 // Main section***************
+
+.s1 {
+  background: $mainColor;
+  border-bottom: 1px solid $borderColor;
+  overflow: auto;
+}
+
+.s2 {
+  background: $secondaryColor;
+  border-bottom: 1px solid $borderColor;
+  overflow: auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
