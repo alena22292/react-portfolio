@@ -31,7 +31,15 @@ class Main extends Component {
 
               </div>
               <div className="left-wrapper">
-                left-column
+                <img className="img-fluid my-picture" src="../../assets/images/image_myself.jpg" alt="" />
+                <h5 style={{ textAlign: 'center' }}>Personalize Theme</h5>
+                <div className="theme-options">
+                   <div id="light-mode" className="theme-dots"></div>
+                   <div id="green-mode" className="theme-dots"></div>
+                   <div id="blue-mode" className="theme-dots"></div>
+                   <div id="purple-mode" className="theme-dots"></div>
+                </div>
+                <p className="light-text">*Theme settings will be saved for<br />your next visit</p>
               </div>
               <div className="right-wrapper">
                  right-column
