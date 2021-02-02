@@ -1,7 +1,26 @@
+// Variables:
+$mainColor: #eaeaea;
+$secondaryColor: #fff;
+
+$mainText: black;
+
+
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: #f4f4f4 !important;
   height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: $mainText;
+}
+
+p, li, span, label, input, textarea {
+
 }
 
 // Home page***************
@@ -24,3 +43,4 @@ body {
   color: white;
 }
 
+// Main section***************

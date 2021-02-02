@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Common/header';
 import Service from './service';
+import Main from './main';
 // import Portfolio from './portfolio';
 
 class Home extends Component {
@@ -16,6 +17,7 @@ class Home extends Component {
           buttonText="Show me more"
         />
         <Service />
+        <Main />
       </div>
     );
   }
