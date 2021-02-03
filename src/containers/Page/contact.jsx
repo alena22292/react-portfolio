@@ -32,12 +32,12 @@ class Contact extends Component {
 
   render() {
     return (
-      <section className="page-section masthead" id="contact" style={{ backgroundImage: 'url("../../../assets/images/contact.jpg")' }}>
+      <section className="masthead" id="contact" style={{ backgroundImage: 'url("../../../assets/images/contact.jpg")' }}>
         <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center" style={{paddingTop: '80px'}}>
-            <h2 className="section-heading text-uppercase">Contact Us</h2>
-            <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur</h3>
+            <h2 className="text-uppercase">Contact Us</h2>
+            <h3 className="text-muted">Lorem ipsum dolor sit amet consectetur</h3>
           </div>
         </div>
         <div className="row">
@@ -62,10 +62,10 @@ class Contact extends Component {
                         );
                     })}
                 <div className="clearfix"></div>
-                <div className="col-lg-12 text-center">
+                  <div className="col-lg-12 text-center">
                     <div id="success"></div>
                     <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-                </div>
+                  </div>
                 </div>
             </form>
             </div>

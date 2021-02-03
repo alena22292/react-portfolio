@@ -13,7 +13,7 @@ class About extends Component {
               <p>Lorem, elitrporis inventore blanditiis tempore, nemo dolorum ad quia. Ab, fuga illum quidem dicta molestias placeat adipisci nulla consequatur.</p>
               <hr />
               <h4>EXPERTISE</h4>
-              <p>Fullstack developer with primary focus on Ruby on Rails and React:<a href="">Download Resume</a></p>
+              <p>Fullstack developer with primary focus on Ruby on Rails and React: <br /> <a className="link-color" href="../../../Alena_Gritsiuk_Resume.pdf">Download Resume</a></p>
               <div className="languages">
                 <ul>
                   <li>Python</li>
@@ -28,7 +28,15 @@ class About extends Component {
               </div>
             </div>
 
-            <div className="social-links"></div>
+            <div className="social-links">
+               <h4>Useful links</h4>
+               <p>It is just for practice purporse</p>
+               <ul>
+                  <li>GitHub</li>
+                  <li>linkedIn</li>
+                  <li>Instagram</li>
+                </ul>
+            </div>
 
           </div>
         </div>

@@ -1,6 +1,9 @@
-.about-me {
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 30px;
 }
+
 .languages {
   display: flex;
   justify-content: space-around;
@@ -9,4 +12,11 @@
   li {
     color: #eeeded;
   }
+}
+.link-color {
+  font-weight: bold;
+  color: #706897;
+}
+.social-links {
+  padding-left: 15px;
 }
