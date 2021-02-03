@@ -42,7 +42,7 @@ function Main() {
                 <div id="navigation">
                   <ul>
                     <li>
-                      <Link className="" to="/contact">Contact</Link>
+                      <Link className="" to="/about">About</Link>
                     </li>
                     <li>
                       <Link className="" to="/contact">Contact</Link>
@@ -55,10 +55,10 @@ function Main() {
                 <img className="img-fluid my-picture" src="../../assets/images/image_myself.jpg" alt="" />
                 <h5 style={{ textAlign: 'center' }}>Personalize Theme</h5>
                 <div className="theme-options">
-                   <div id="light-mode" className="theme-dots" onClick={() => handleClick("light-mode")}></div>
-                   <div id="green-mode" className="theme-dots" onClick={() => handleClick("green-mode")}></div>
-                   <div id="blue-mode" className="theme-dots active" onClick={() => handleClick("blue-mode")}></div>
-                   <div id="purple-mode" className="theme-dots" onClick={() => handleClick("purple-mode")}></div>
+                   <div id="light-mode" className={`${colorTheme === 'light-mode' ? 'theme-dots active' : 'theme-dots'}`} onClick={() => handleClick("light-mode")}></div>
+                   <div id="green-mode" className={`${colorTheme === 'green-mode' ? 'theme-dots active' : 'theme-dots'}`} onClick={() => handleClick("green-mode")}></div>
+                   <div id="blue-mode" className={`${colorTheme === 'blue-mode' ? 'theme-dots active' : 'theme-dots'}`} onClick={() => handleClick("blue-mode")}></div>
+                   <div id="purple-mode" className={`${colorTheme === 'purple-mode' ? 'theme-dots active' : 'theme-dots'}`} onClick={() => handleClick("purple-mode")}></div>
                 </div>
                 <p className="light-text">*Theme settings will be saved for<br />your next visit</p>
               </div>
