@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Main() {
     // state
-
     const [colorTheme, setColorTheme] = useState('light-mode');
 
     // effect
-
     useEffect(() => {
       // check for selected team, localstorage value
       const currentThemeColor = localStorage.getItem('theme-color');
@@ -18,7 +16,6 @@ function Main() {
     }, []);
 
     // set theme
-
     const handleClick = (theme) => {
       setColorTheme(theme);
       localStorage.setItem('theme-color', theme);
