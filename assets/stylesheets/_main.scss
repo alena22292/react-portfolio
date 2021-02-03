@@ -1,9 +1,72 @@
 // Variables:
-$mainColor: #eaeaea !important;
-$secondaryColor: #fff !important;
-$borderColor: #c1c1c1 !important;
+$mainColor: #eaeaea;
+$secondaryColor: #fff;
+$borderColor: #c1c1c1;
 $mainText: black;
 $secondaryText: #4b5156;
+
+$blueTheme: #a7c5eb !important;
+$greenTheme: #70af85 !important;
+$purpleTheme: #da9ff9 !important;
+$lightTheme: #f5f4f4;
+
+
+// theming:
+.intro-wrapper.blue-mode {
+  background: $blueTheme;
+  #preview {
+    background-color: #bbf1fa;
+    h3, p {
+      color: #663f3f;
+    }
+  }
+  #preview-shadow {
+    background-color: #51c2d5;
+  }
+  .corner {
+    border: 2px solid #350b40;
+    background-color: #aee1e1;
+  }
+}
+
+.intro-wrapper.green-mode {
+  background: $greenTheme;
+  #preview {
+    background-color: #96bb7c;
+    h3, p {
+      color: #374045;
+    }
+  }
+  #preview-shadow {
+    background-color: #295939;
+  }
+  .corner {
+    border: 2px solid #374045;
+    background-color: #d89216;
+  }
+}
+
+.intro-wrapper.purple-mode {
+  background: $purpleTheme;
+  #preview {
+    background-color: #48426d;
+    h3, p {
+      color: #f1aa9b;
+    }
+  }
+  #preview-shadow {
+    background-color: #312c51;
+  }
+  .corner {
+    border: 2px solid #374045;
+    background-color: #f1aa9b;
+  }
+}
+
+.intro-wrapper.light-mode{
+  background: $lightTheme;
+}
+
 
 .s1 {
   background: $mainColor;
@@ -25,7 +88,6 @@ $secondaryText: #4b5156;
   display: grid;
   justify-content: center;
   align-content: center;
-  // border: 2px dashed #276678;
   min-height: 10em;
 }
 .intro-wrapper {
@@ -104,6 +166,9 @@ $secondaryText: #4b5156;
     background-color: $secondaryText;
     box-shadow: 0 2px 3px rgba(0,0,0,0.6);
     opacity: 0.9;
+  }
+  &.active {
+    opacity: 1;
   }
 }
 #light-mode {

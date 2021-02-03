@@ -1,23 +1,29 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-class Main extends Component {
-  handleClick = (e) => {
-    const mode = e.target.dataset.mode;
-    console.log("it was clicked", mode);
-    this.setTheme(mode);
-  }
+function Main() {
+    // state
 
-  setTheme = (color) => {
-        if (color === "green")
-            color = "#16c79a";
-        document
-            .documentElement
-            .style
-            .setProperty("$mainColor", color);
-  }
+    const [colorTheme, setColorTheme] = useState('light-mode');
 
-  render() {
+    // effect
+
+    useEffect(() => {
+      // check for selected team, localstorage value
+      const currentThemeColor = localStorage.getItem('theme-color');
+      // if found set selected theme value in state
+      if (currentThemeColor) {
+        setColorTheme(currentThemeColor);
+      }
+    }, []);
+
+    // set theme
+
+    const handleClick = (theme) => {
+      setColorTheme(theme);
+      localStorage.setItem('theme-color', theme);
+    };
+
     return (
       <div>
         <section className="s1">
@@ -26,7 +32,7 @@ class Main extends Component {
               <h1>Hi, I am Alena</h1>
             </div>
 
-            <div className="intro-wrapper">
+            <div className={`intro-wrapper ${colorTheme}`}>
               <div className="nav-wrapper">
                 <div className="dots-wrapper">
                   <div id="dot-1" className="nav-dots"></div>
@@ -49,10 +55,10 @@ class Main extends Component {
                 <img className="img-fluid my-picture" src="../../assets/images/image_myself.jpg" alt="" />
                 <h5 style={{ textAlign: 'center' }}>Personalize Theme</h5>
                 <div className="theme-options">
-                   <div data-mode="light" id="light-mode" className="theme-dots" onClick={this.handleClick}></div>
-                   <div data-mode="green" id="green-mode" className="theme-dots" onClick={this.handleClick}></div>
-                   <div data-mode="blue" id="blue-mode" className="theme-dots" onClick={this.handleClick}></div>
-                   <div data-mode="purple" id="purple-mode" className="theme-dots" onClick={this.handleClick}></div>
+                   <div id="light-mode" className="theme-dots" onClick={() => handleClick("light-mode")}></div>
+                   <div id="green-mode" className="theme-dots" onClick={() => handleClick("green-mode")}></div>
+                   <div id="blue-mode" className="theme-dots active" onClick={() => handleClick("blue-mode")}></div>
+                   <div id="purple-mode" className="theme-dots" onClick={() => handleClick("purple-mode")}></div>
                 </div>
                 <p className="light-text">*Theme settings will be saved for<br />your next visit</p>
               </div>
@@ -73,7 +79,6 @@ class Main extends Component {
         </section>
       </div>
     );
-  }
 }
 
 export default Main;
