@@ -71,3 +71,33 @@ ul {
   left: 50%;
   color: white;
 }
+// Portfolio ************
+.portfolio-wrapper {
+  border-radius: 10px 10px 0 0 ;
+  border: 1px solid $borderColor;
+  $borderColor: #c1c1c1;
+  margin-bottom: 20px;
+}
+.portfolio-caption {
+  padding: 10px;
+  h4 {
+    text-align: center;
+  }
+}
+// images ***************
+.portfolio-pic {
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

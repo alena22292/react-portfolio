@@ -2,12 +2,7 @@ import React, { Component } from 'react';
 import PortofolioItem from './portfolioItem';
 
 const portfolio = [
-  {title: 'Threads', subtitle: 'Illustration', image: '../../../assets/images/Portofolio/01-thumbnail.jpg' },
-  {title: 'Explore', subtitle: 'Graphic Design', image: '../../../assets/images/Portofolio/02-thumbnail.jpg' },
-  {title: 'Finish', subtitle: 'Identity', image: '../../../assets/images/Portofolio/03-thumbnail.jpg' },
-  {title: 'Lines', subtitle: 'Branding', image: '../../../assets/images/Portofolio/04-thumbnail.jpg' },
-  {title: 'Southwest', subtitle: 'Website Design', image: '../../../assets/images/Portofolio/05-thumbnail.jpg' },
-  {title: 'Window', subtitle: 'Photography, and there are more than one line of explanation', image: '../../../assets/images/Portofolio/06-thumbnail.jpg' }
+  {title: 'Redu.co', subtitle: 'The App will help you to reduce CO2 emissions on daily base', image: '../../../assets/images/Portofolio/01-thumbnail.jpg' },
 ]
 
 class Portfolio extends Component {
@@ -27,7 +22,7 @@ class Portfolio extends Component {
             })}
         </div>
         </div>
-      </section>
+       </section>
     );
   }
 }

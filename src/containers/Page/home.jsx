@@ -16,8 +16,8 @@ class Home extends Component {
           link="/service"
           buttonText="Show me more"
         />
-        <Service />
         <Main />
+        <Service />
       </div>
     );
   }
