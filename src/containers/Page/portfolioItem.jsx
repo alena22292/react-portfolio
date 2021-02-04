@@ -16,7 +16,7 @@ class PortofolioItem extends Component {
             <div id="navigation">
               <ul>
                 <li>
-                  <Link className="" to="#">Read more</Link>
+                  <Link className="" to={this.props.local}>Read more</Link>
                 </li>
               </ul>
             </div>

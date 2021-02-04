@@ -1,0 +1,12 @@
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-picture {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-right: 30px;
+}

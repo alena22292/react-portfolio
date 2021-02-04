@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap');
 @import 'about';
 @import 'main';
+@import 'projects';
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -54,7 +55,7 @@ ul {
 }
 // Home page***************
 .page-top {
-  margin-top: 56px;
+  margin-top: 80px;
 }
 .masthead {
   height: 400px;
