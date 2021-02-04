@@ -23,7 +23,7 @@ class PortofolioItem extends Component {
           </div>
 
           <div className="portfolio-card">
-            <a className="portfolio-link" href="#portfolioModal1">
+            <a className="portfolio-link" target="_blank" href={this.props.link}>
               <img className="img-fluid" src={this.props.image} alt="" />
             </a>
             <div className="portfolio-caption">

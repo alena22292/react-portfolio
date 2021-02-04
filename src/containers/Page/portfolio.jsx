@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PortofolioItem from './portfolioItem';
 
 const portfolio = [
-  {title: 'Redu.co', subtitle: 'The App will help you to reduce CO2 emissions on daily base', image: '../../../assets/images/Portofolio/01-thumbnail.jpg' },
+  {title: 'Redu.co', subtitle: 'The App will help you to reduce CO2 emissions on daily base', image: '../../../assets/images/Portofolio/project_1_2.png', link: 'http://www.redu.co' },
+  {title: 'Dress-to-Impress', subtitle: 'How often do you wonder what to dress to the comming party...', image: '../../../assets/images/Portofolio/project_2_1.png', link: 'https://dress-to-impress-alena.herokuapp.com/' }
 ]
 
 class Portfolio extends Component {
