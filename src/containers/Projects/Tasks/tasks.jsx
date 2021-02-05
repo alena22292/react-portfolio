@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Task from './task';
+import AddTask from './addTask';
 
 const myTasks = [
   {
@@ -31,10 +32,19 @@ class Tasks extends Component {
     };
   }
 
+
   getReminder = (id) => {
     const updatedTasks = this.state.tasks.map(task => task.id === id ? { id: task.id, text: task.text, date: task.date, reminder: !task.reminder } : task);
     this.setState({
       tasks: updatedTasks,
+    });
+  }
+
+  addNewTask = (task) => {
+    this.setState((prevState) => {
+      return {
+        tasks: prevState.tasks.concat(task)
+      };
     });
   }
 
@@ -45,11 +55,11 @@ class Tasks extends Component {
     });
   }
 
-
   render() {
     return (
       <div className="page-top">
         <h1>Hello, It is a task manager</h1>
+        <AddTask addNewTask={this.addNewTask} key={Date.now()} />
         <div className="tasks-wrapper">
           {this.state.tasks.map((task) => {
             return <Task {...task} getReminder={this.getReminder} deleteTasks={this.deleteTasks} key={task.id} />;

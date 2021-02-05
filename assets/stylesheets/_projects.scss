@@ -14,16 +14,15 @@
 }
 // Task manager:
 .tasks-wrapper {
-  max-width: 400px;
+  width: 600px;
   margin: 0 auto;
   line-height: 0.3;
   background: #719fb0;
   border: 1px solid #351f39;
   border-radius: 10px;
-  padding: 10px;
+  padding: 40px;
 }
 .task-wrapper {
-  // border: 1px solid #351f39;
   margin-bottom: 10px;
   padding: 10px;
   h3, p, i {
@@ -41,5 +40,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
+.form-add {
+  width: 600px;
+  margin: 0 auto;
+  background: #719fb0;
+  border: 1px solid #351f39;
+  border-radius: 10px;
+  padding: 40px;
+}
+.my-btn {
+  width: 100%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  font-family: 'Sriracha', cursive;
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  }
 }
