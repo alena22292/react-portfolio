@@ -31,13 +31,28 @@ class Tasks extends Component {
     };
   }
 
+  getReminder = (id) => {
+    const updatedTasks = this.state.tasks.map(task => task.id === id ? { id: task.id, text: task.text, date: task.date, reminder: !task.reminder } : task);
+    this.setState({
+      tasks: updatedTasks,
+    });
+  }
+
+  deleteTasks = (id) => {
+    const updatedTasks = this.state.tasks.filter(task => task.id !== id);
+    this.setState({
+      tasks: updatedTasks,
+    });
+  }
+
+
   render() {
     return (
       <div className="page-top">
         <h1>Hello, It is a task manager</h1>
         <div className="tasks-wrapper">
           {this.state.tasks.map((task) => {
-            return <Task {...task} key={task.id} />;
+            return <Task {...task} getReminder={this.getReminder} deleteTasks={this.deleteTasks} key={task.id} />;
           })}
         </div>
       </div>
