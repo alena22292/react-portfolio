@@ -16,8 +16,8 @@ class Reduco extends Component {
         <div className="display-flex">
           <img className="portfolio-picture" src="../../../assets/images/Portofolio/project_1_1.png" alt="" />
           <div>
-              <h3>Main Idea</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias deserunt ducimus minima corporis, maxime earum omnis asperiores veritatis hic odit eveniet repudiandae sit praesentium dolore id nesciunt esse maiores autem.</p>
+            <h3>Main Idea</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias deserunt ducimus minima corporis, maxime earum omnis asperiores veritatis hic odit eveniet repudiandae sit praesentium dolore id nesciunt esse maiores autem.</p>
           </div>
         </div>
         <div className="display-flex">
@@ -29,12 +29,12 @@ class Reduco extends Component {
         </div>
         <div className="display-flex">
           <img className="portfolio-picture" src="../../../assets/images/Portofolio/project_1_3.png"  alt="" />
-         <div>
-          <h3>Main Idea</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias deserunt ducimus minima corporis, maxime earum omnis asperiores veritatis hic odit eveniet repudiandae sit praesentium dolore id nesciunt esse maiores autem.</p>
-        </div>
+        <div>
+           <h3>Main Idea</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias deserunt ducimus minima corporis, maxime earum omnis asperiores veritatis hic odit eveniet repudiandae sit praesentium dolore id nesciunt esse maiores autem.</p>
         </div>
       </div>
+    </div>
 
     );
   }

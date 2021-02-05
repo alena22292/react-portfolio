@@ -8,6 +8,8 @@ import Portfolio from './Page/portfolio';
 import Contact from './Page/contact';
 import Reduco from './Projects/reduco';
 import Dress from './Projects/dress';
+import Tasks from './Projects/tasks';
+
 
 class App extends Component {
   render() {
@@ -42,6 +44,10 @@ class App extends Component {
           <Route
             path="/dress"
             component={Dress}
+          />
+          <Route
+            path="/tasks"
+            component={Tasks}
           />
         </Wrapper>
       </Router>

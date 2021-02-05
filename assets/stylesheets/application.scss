@@ -56,9 +56,10 @@ ul {
 // Home page***************
 .page-top {
   margin-top: 80px;
+  height: 100vh;
 }
 .masthead {
-  height: 400px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,7 +68,7 @@ ul {
 
 .hero-text {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 150px;
   top: 50%;
   left: 50%;
   color: white;
@@ -89,6 +90,10 @@ ul {
 .portfolio-pic {
   width: 50px;
   border-radius: 50%;
+}
+.img-preview {
+  height: 185px;
+  width: 100%;
 }
 
 

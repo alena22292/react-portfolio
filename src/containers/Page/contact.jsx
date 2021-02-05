@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import Field from './contactField';
 
 const fields = {
-    sections: [
-        [
-          {name: 'name', elementName: 'input', type: 'text', placeholder: "Your name*"},
-          {name: 'email', elementName: 'input', type: 'email', placeholder: "Your email*"},
-          {name: 'phone', elementName: 'input', type: 'text', placeholder: "Your phone*"},
-        ],
-        [
-          {name: 'message', elementName: 'textarea', type: 'text', placeholder: "Type your message"},
-        ]
+  sections: [
+    [
+      { name: 'name', elementName: 'input', type: 'text', placeholder: "Your name*" },
+      { name: 'email', elementName: 'input', type: 'email', placeholder: "Your email*" },
+      { name: 'phone', elementName: 'input', type: 'text', placeholder: "Your phone*" },
+    ],
+    [
+      { name: 'message', elementName: 'textarea', type: 'text', placeholder: "Type your message"},
     ]
+  ]
 };
 
 class Contact extends Component {
@@ -35,8 +35,8 @@ class Contact extends Component {
       <section className="masthead" id="contact" style={{ backgroundImage: 'url("../../../assets/images/contact.jpg")' }}>
         <div className="container">
         <div className="row">
-          <div className="col-lg-12 text-center" style={{paddingTop: '48px'}}>
-            <h2 className="text-uppercase">Contact Us</h2>
+          <div className="col-lg-12 text-center" style={{ paddingTop: '48px' }}>
+            <h2 className="text-uppercase">Contact Me</h2>
             <h3 className="text-muted">Lorem ipsum dolor sit amet consectetur</h3>
           </div>
         </div>
@@ -44,32 +44,32 @@ class Contact extends Component {
           <div className="col-lg-12">
             <form id="contactForm" name="sentMessage" noValidate="novalidate" onSubmit={e => this.submitForm(e)}>
                 <div className="row">
-                    {fields.sections.map((section, i) => {
-                        console.log("Section", i, "with", section);
-                        return(
-                            <div className="col-md-6" key={i}>
-                                {section.map((field, indexField)=>{
-                                    return <Field
-                                                {...field}
-                                                key={indexField}
-                                                value={this.state[field.name]}
-                                                onChange={e=>this.setState({
-                                                    [field.name]: e.target.value
-                                                })}
-                                            />
-                                })}
-                            </div>
-                        );
-                    })}
-                <div className="clearfix"></div>
+                  {fields.sections.map((section, i) => {
+                    console.log("Section", i, "with", section);
+                    return (
+                      <div className="col-md-6" key={i}>
+                        {section.map((field, indexField) => {
+                          return <Field
+                            {...field}
+                            key={indexField}
+                            value={this.state[field.name]}
+                            onChange={e => this.setState({
+                              [field.name]: e.target.value
+                            })}
+                          />;
+                        })}
+                      </div>
+                    );
+                  })}
+                  <div className="clearfix"></div>
                   <div className="col-lg-12 text-center">
                     <div id="success"></div>
                     <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
                   </div>
                 </div>
-            </form>
+              </form>
             </div>
-        </div>
+          </div>
         </div>
       </section>
     );
