@@ -41,6 +41,7 @@ class Tasks extends Component {
   }
 
   addNewTask = (task) => {
+    console.log(task);
     this.setState((prevState) => {
       return {
         tasks: prevState.tasks.concat(task)

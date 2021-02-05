@@ -13,12 +13,13 @@ class AddTask extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
+
     if (!this.state.text) {
       alert("Please add a task");
-      return;
+      return
     }
 
-    this.props.addNewTask({ id: Date.now(), text: this.props.text, date: this.props.date, reminder: this.props.reminder });
+    this.props.addNewTask({ id: Date.now(), text: this.state.text, date: this.state.date, reminder: this.state.reminder });
 
     this.setState({ text: '', date: '', reminder: false });
   }
