@@ -8,7 +8,7 @@ import Portfolio from './Page/portfolio';
 import Contact from './Page/contact';
 import Reduco from './Projects/reduco';
 import Dress from './Projects/dress';
-import Tasks from './Projects/tasks';
+import Tasks from './Projects/Tasks/tasks';
 
 
 class App extends Component {

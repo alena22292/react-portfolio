@@ -1,3 +1,5 @@
+
+
 .display-flex {
   display: flex;
   justify-content: center;
@@ -10,4 +12,34 @@
   margin-top: 20px;
   margin-right: 30px;
 }
+// Task manager:
+.tasks-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 0.3;
+  background: #719fb0;
+  border: 1px solid #351f39;
+  border-radius: 10px;
+  padding: 10px;
+}
+.task-wrapper {
+  // border: 1px solid #351f39;
+  margin-bottom: 10px;
+  padding: 10px;
+  h3, p, i {
+    color: #f7f7e8;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+.reminder {
+    border-left: 5px solid #ffe227;
+  }
 
+.display-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}

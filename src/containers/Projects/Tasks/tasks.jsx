@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Task from './task';
 
 const myTasks = [
   {
@@ -34,8 +35,10 @@ class Tasks extends Component {
     return (
       <div className="page-top">
         <h1>Hello, It is a task manager</h1>
-        <div>
-          <h3>{this.state.tasks[0].text}</h3>
+        <div className="tasks-wrapper">
+          {this.state.tasks.map((task) => {
+            return <Task {...task} key={task.id} />;
+          })}
         </div>
       </div>
     );
