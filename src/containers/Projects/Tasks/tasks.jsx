@@ -5,7 +5,7 @@ import AddTask from './addTask';
 const myTasks = [
   {
     id: 1,
-    text: "Shooping",
+    text: "Shoping",
     date: "Feb 5th at 2:46pm",
     reminder: true,
     complete: false
@@ -85,10 +85,11 @@ class Tasks extends Component {
   render() {
     // const completedTasks = this.state.tasks.filter(task => task.complete);
     return (
-      <div className="page-top">
+      <div className="page-top masthead" style={{ backgroundImage: 'url("../../assets/images/time.jpeg")' }}>
         <div className="">
-          <h1 style={{ textAlign: 'center' }}>Personal Task Manager</h1>
+          <h1 style={{ textAlign: 'center', color: '#f7f7e8' }}>Personal Task Manager</h1>
         </div>
+        <div className="container">
         <div className="row">
             <div className="col-sm-12 col-lg-3">
                <div className="tasks-wrapper">
@@ -115,6 +116,8 @@ class Tasks extends Component {
 
             {this.state.showBtnTask && <AddTask addNewTask={this.addNewTask} key={Date.now()} />}
         </div>
+      </div>
+
       </div>
     );
   }
