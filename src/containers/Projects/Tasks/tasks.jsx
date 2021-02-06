@@ -90,13 +90,13 @@ class Tasks extends Component {
           <h1 style={{ textAlign: 'center', color: '#f7f7e8' }}>Personal Task Manager</h1>
         </div>
         <div className="container">
-        <div className="row">
+          <div className="row">
             <div className="col-sm-12 col-lg-3">
-               <div className="tasks-wrapper">
-                 {this.completedTasks().map((task) => {
+              <div className="tasks-wrapper">
+                {this.completedTasks().map((task) => {
                   return <Task {...task} key={task.id} />;
                 })}
-               </div>
+              </div>
             </div>
 
             <div className="col-sm-12 col-lg-5">
@@ -114,7 +114,7 @@ class Tasks extends Component {
               </div>
             </div>
 
-            {this.state.showBtnTask && <AddTask addNewTask={this.addNewTask} key={Date.now()} />}
+              {this.state.showBtnTask && <AddTask addNewTask={this.addNewTask} key={Date.now()} />}
         </div>
       </div>
 

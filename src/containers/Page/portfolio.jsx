@@ -12,12 +12,10 @@ class Portfolio extends Component {
     return (
       <section className="bg-light page-top" id="portfolio">
         <div className="container">
-        <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2 className="text-uppercase">Portfolio</h2>
-              <h3 className="text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-        </div>
+          <div className="text-center mb-3">
+            <h2 className="text-uppercase">Portfolio</h2>
+            <h3 className="text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
         <div className="row">
             {portfolio.map((item, i)=>{
                 return <PortofolioItem {...item} key={i} />

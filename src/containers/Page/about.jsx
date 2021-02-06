@@ -5,6 +5,7 @@ class About extends Component {
   render() {
     return (
       <section className="s2 page-top" id="about">
+      <div className="container">
         <div className="main-container">
           <div className="about-wrapper">
             <div className="about-me">
@@ -40,6 +41,7 @@ class About extends Component {
 
           </div>
         </div>
+      </div>
       </section>
     );
   }

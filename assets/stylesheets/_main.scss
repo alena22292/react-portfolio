@@ -70,13 +70,13 @@ $lightTheme: #f5f4f4;
 .s1 {
   background: $mainColor;
   border-bottom: 1px solid $borderColor;
-  overflow: auto;
+  margin: 0 auto;
 }
 
 .s2 {
   background: $secondaryColor;
   border-bottom: 1px solid $borderColor;
-  overflow: auto;
+  margin: 0 auto;
 }
 
 .main-container {

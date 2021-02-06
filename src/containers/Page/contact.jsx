@@ -34,14 +34,10 @@ class Contact extends Component {
     return (
       <section className="masthead" id="contact" style={{ backgroundImage: 'url("../../../assets/images/contact.jpg")' }}>
         <div className="container">
-        <div className="row">
-          <div className="col-lg-12 text-center" style={{ paddingTop: '48px' }}>
+          <div className="text-center" style={{ paddingTop: '56px' }}>
             <h2 className="text-uppercase">Contact Me</h2>
             <h3 className="text-muted">Lorem ipsum dolor sit amet consectetur</h3>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-12">
             <form id="contactForm" name="sentMessage" noValidate="novalidate" onSubmit={e => this.submitForm(e)}>
                 <div className="row">
                   {fields.sections.map((section, i) => {
@@ -68,8 +64,6 @@ class Contact extends Component {
                   </div>
                 </div>
               </form>
-            </div>
-          </div>
         </div>
       </section>
     );
