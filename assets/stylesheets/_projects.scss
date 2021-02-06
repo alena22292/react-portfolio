@@ -12,15 +12,18 @@
   margin-top: 20px;
   margin-right: 30px;
 }
+
 // Task manager:
+
 .tasks-wrapper {
-  width: 600px;
   margin: 0 auto;
   line-height: 0.3;
   background: #719fb0;
-  border: 1px solid #351f39;
   border-radius: 10px;
   padding: 40px;
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  }
 }
 .task-wrapper {
   margin-bottom: 10px;
@@ -31,6 +34,14 @@
   p {
     font-size: 12px;
   }
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  }
+}
+
+.dashed {
+  border: 5px dashed #ffe227;
 }
 .reminder {
     border-left: 5px solid #ffe227;
@@ -42,19 +53,53 @@
   align-items: center;
 }
 
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-add {
-  width: 600px;
   margin: 0 auto;
   background: #719fb0;
-  border: 1px solid #351f39;
   border-radius: 10px;
   padding: 40px;
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  }
 }
+
+// Buttons:
 .my-btn {
   width: 100%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   font-family: 'Sriracha', cursive;
   &:hover {
     box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  }
+}
+.add-btn {
+  color: white;
+  width: 100px;
+  padding: 28px;
+  text-align: center;
+  margin: 14px auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  font-family: 'Sriracha', cursive;
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  }
+}
+
+// Icons:
+
+.icons {
+  i {
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+      font-size: 20px;
+    }
   }
 }
