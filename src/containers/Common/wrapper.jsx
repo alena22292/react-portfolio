@@ -17,7 +17,7 @@ class Wrapper extends Component {
   render() {
     return (
       <div>
-         <div className={this.state.responsive ? 'topnav responsive' : 'topnav'} id="myTopnav">
+        <div className={this.state.responsive ? 'topnav responsive' : 'topnav'} id="myTopnav">
           <Link to="/" className="active">
             <img className="portfolio-pic" src="../../../assets/images/portfolio.svg" alt="" />
           </Link>
@@ -30,7 +30,7 @@ class Wrapper extends Component {
           }}>
             <i className="fa fa-bars"></i>
           </Link>
-        </div>
+       </div>
         {this.props.children}
       </div>
     );

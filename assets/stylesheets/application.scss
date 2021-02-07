@@ -59,18 +59,18 @@ ul {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: transparent;
-  // overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #a7c5eb;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  margin-right: 15px;
 }
 
 /* Change the color of links on hover */
@@ -84,6 +84,7 @@ ul {
   background-color: #a7c5eb;
   color: #a7c5eb;
   border-radius: 50%;
+  width: 50px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
